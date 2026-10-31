@@ -1,0 +1,244 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #4169f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            padding: 25px 35px;
+            border: 2px solid #d5d5d5;
+            border-radius: 7px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 35px;
+            text-decoration: underline;
+        }
+
+        .section-title {
+            font-size: 19px;
+            color: #555;
+            font-weight: bold;
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px 25px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 15px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        input, select {
+            width: 100%;
+            height: 43px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus, select:focus {
+            border-color: #4169f5;
+            box-shadow: 0 0 4px rgba(65,105,245,0.3);
+        }
+
+        .next-btn {
+            width: 280px;
+            padding: 13px;
+            background-color: #4169f5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .next-btn:hover {
+            background-color: #244bd5;
+        }
+
+        .arrow {
+            margin-left: 8px;
+            font-size: 18px;
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 500px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .next-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Registration</h2>
+
+    <form id="registrationForm">
+
+        <!-- PERSONAL DETAILS -->
+
+        <div class="section-title">
+            Personal Details
+        </div>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Mobile number</label>
+                <input type="tel" placeholder="Enter mobile number"
+                       pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <input type="text" placeholder="Enter your gender">
+            </div>
+
+            <div class="form-group">
+                <label>Occupation</label>
+                <input type="text" placeholder="Enter occupation" required>
+            </div>
+
+        </div>
+
+
+        <!-- IDENTITY DETAILS -->
+
+        <div class="section-title">
+            Identity Details
+        </div>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+                <label>ID Type</label>
+                <input type="text"placeholder="Enter ID type">
+
+               
+
+
+
+
+                   
+            </div>
+
+            <div class="form-group">
+                <label>ID Number</label>
+                <input type="text" placeholder="Enter ID number" required>
+            </div>
+
+            <div class="form-group">
+                <label>Issue Authority</label>
+                <input type="text" placeholder="Enter issue department" required>
+            </div>
+
+            <div class="form-group">
+                <label>Issue Date</label>
+                <input type="date" required placeholder="Enter ID issue date ">
+            </div>
+
+            <div class="form-group">
+                <label>Issue State</label>
+                <input type="text" placeholder="Enter ID issue state" required>
+            </div>
+
+            <div class="form-group">
+                <label>Expiry Date</label>
+                <input type="date" placeholder="Enter ID Expiry Date">
+            </div>
+
+        </div>
+
+        <!-- NEXT BUTTON -->
+
+        <button type="submit" class="next-btn">
+            Next <span class="arrow">→</span>
+        </button>
+
+    </form>
+
+</div>
+
+
+
+</body>
+</html>
+```

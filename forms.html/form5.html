@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up and Sign In</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, #315f42, #a0a900);
+}
+
+.container {
+    width: 680px;
+    height: 425px;
+    background: white;
+    border-radius: 28px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Left Welcome Section */
+
+.left-panel {
+    width: 50%;
+    background: #004b58;
+    color: white;
+    border-radius: 28px 150px 150px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.left-panel h1 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.left-panel p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 28px;
+}
+
+.signin-btn {
+    width: 125px;
+    height: 35px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Right Registration Section */
+
+.right-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.right-panel h1 {
+    font-size: 29px;
+    margin-bottom: 18px;
+}
+
+/* Social Icons */
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #4c8490;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #174e5b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.right-panel h2 {
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.right-panel p {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+/* Form */
+
+form {
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    height: 33px;
+    margin-bottom: 13px;
+    padding: 10px 13px;
+    border: none;
+    background: #cccccc;
+    outline: none;
+    font-size: 12px;
+}
+
+form input:focus {
+    border: 1px solid #00515e;
+}
+
+.signup-btn {
+    display: block;
+    width: 130px;
+    height: 34px;
+    margin: 0 auto;
+    background: #c2c500;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background: #a5a900;
+}
+
+/* Responsive Design */
+
+@media(max-width: 700px) {
+    .container {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left-panel {
+        width: 100%;
+        border-radius: 28px 28px 100px 100px;
+        min-height: 250px;
+    }
+
+    .right-panel {
+        width: 100%;
+        padding: 35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+    <div class="left-panel">
+
+        <h1>Welcome Back!</h1>
+
+        <p>
+            Provide your personal details to use all<br>
+            features
+        </p>
+
+        <button class="signin-btn" type="button">
+            SIGN IN
+        </button>
+
+    </div>
+
+    <!-- Right Side -->
+    <div class="right-panel">
+
+        <h1>Register With</h1>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#">G+</a>
+            <a href="#">f</a>
+            <a href="#">◉</a>
+            <a href="#">in</a>
+        </div>
+
+        <h2>OR</h2>
+
+        <p>Fill Out The Following Info For Registration</p>
+
+        <form>
+
+            <input type="text" placeholder="Name" required>
+
+            <input type="email" placeholder="Email" required>
+
+            <input type="password" placeholder="Password" required>
+
+            <button type="submit" class="signup-btn">
+                SIGN UP
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>

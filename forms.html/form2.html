@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login-container {
+            width: 388px;
+            min-height: 480px;
+            background-color: #152027;
+            padding: 35px 33px;
+            border-left: 1px solid #35434b;
+            border-right: 1px solid #35434b;
+            color: white;
+        }
+
+        h3 {
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            width: 100%;
+            height: 50px;
+            background: transparent;
+            border: 1px solid #40515c;
+            border-radius: 12px;
+            padding: 10px;
+            margin-bottom: 9px;
+            color: white;
+            outline: none;
+        }
+
+        .input-box:focus {
+            border: 1px solid #82939d;
+        }
+
+        .input-box::placeholder {
+            color: #9baab4;
+            font-size: 11px;
+        }
+
+        .login-btn {
+            width: 100%;
+            height: 37px;
+            margin-top: 10px;
+            background-color: #17477f;
+            color: #8498b3;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .forgot {
+            text-align: center;
+            margin-top: 22px;
+            font-size: 12px;
+        }
+
+        .forgot a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .bottom-buttons {
+            margin-top: 53px;
+        }
+
+        .facebook-btn,
+        .create-btn {
+            width: 100%;
+            height: 37px;
+            background: transparent;
+            border: 1px solid #354a56;
+            border-radius: 20px;
+            color: white;
+            font-size: 12px;
+            cursor: pointer;
+            margin-bottom: 9px;
+        }
+
+        .facebook-btn span {
+            color: #1689ff;
+            font-weight: bold;
+        }
+
+        .create-btn {
+            border-color: #1877d2;
+            color: #2998ff;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h3>Log into Instagram</h3>
+
+        <form>
+            <input
+                type="text"
+                class="input-box"
+                placeholder="Mobile number, username or email"
+                required
+            >
+
+            <input
+                type="password"
+                class="input-box"
+                placeholder="Password"
+                required
+            >
+
+            <button type="submit" class="login-btn">
+                Log in
+            </button>
+        </form>
+
+        <div class="forgot">
+            <a href="#">Forgot password?</a>
+        </div>
+
+        <div class="bottom-buttons">
+
+            <button class="facebook-btn">
+                <span>f</span> Log in with Facebook
+            </button>
+
+            <button class="create-btn">
+                Create new account
+            </button>
+
+        </div>
+
+    </div>
+
+   
+
+</body>
+</html>

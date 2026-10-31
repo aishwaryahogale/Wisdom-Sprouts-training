@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 310px;
+            background-color: #eeeeee;
+            padding: 12px 27px 35px;
+            border-radius: 7px;
+            border: 1px solid #cccccc;
+            box-shadow: 0px 1px 5px #bbbbbb;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 27px;
+            font-weight: 300;
+            color: #777777;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            border-top: 1px solid #dddddd;
+            border-bottom: 1px solid #dddddd;
+            padding: 18px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            color: #777777;
+            font-size: 14px;
+        }
+
+        .options label,
+        .gender label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            accent-color: #405eb5;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .input-group {
+            display: flex;
+            margin-top: 14px;
+            height: 37px;
+        }
+
+        .icon {
+            width: 39px;
+            background-color: #405eb5;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px 0 0 3px;
+            font-size: 16px;
+        }
+
+        .input-group input {
+            width: 100%;
+            border: 1px solid #dddddd;
+            background: white;
+            padding: 10px;
+            font-size: 14px;
+            outline: none;
+            box-shadow: 0 1px 5px #cccccc;
+        }
+
+        .input-group input:focus {
+            border-color: #405eb5;
+        }
+
+        .gender {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 23px;
+            color: #777777;
+            font-size: 14px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 35px;
+        }
+
+        .terms {
+            width: 135px;
+            font-size: 10px;
+            color: #777777;
+            line-height: 13px;
+        }
+
+        .terms a {
+            color: #405eb5;
+        }
+
+        .register-btn {
+            background-color: #405eb5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 9px 20px;
+            font-size: 13px;
+            cursor: pointer;
+            box-shadow: 0 1px 3px #999999;
+        }
+
+        .register-btn:hover {
+            background-color: #304b9c;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Registration</h1>
+
+        <form>
+
+            <!-- Personal / Company -->
+            <div class="options">
+                <label>
+                    <input type="radio" name="type" value="personal" checked>
+                    Personal
+                </label>
+
+                <label>
+                    <input type="radio" name="type" value="company">
+                    Company
+                </label>
+            </div>
+
+            <!-- Email -->
+            <div class="input-group">
+                <div class="icon">✉</div>
+                <input type="email" placeholder="Email" required>
+            </div>
+
+            <!-- Name -->
+            <div class="input-group">
+                <div class="icon">♟</div>
+                <input type="text" placeholder="Name" required>
+            </div>
+
+            <!-- Password -->
+            <div class="input-group">
+                <div class="icon">⛨</div>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <!-- Gender -->
+            <div class="gender">
+                <label>
+                    <input type="radio" name="gender" value="male" checked>
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </label>
+            </div>
+
+            <!-- Terms and Register -->
+            <div class="footer">
+
+                <div class="terms">
+                    By clicking Register, you agree on our
+                    <a href="#">terms and condition</a>.
+                </div>
+
+                <button type="submit" class="register-btn">
+                    Register
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
