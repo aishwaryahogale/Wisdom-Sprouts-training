@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedIn Navbar</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+.navbar {
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    background: #0a66c2;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 1px 5px;
+    border-radius: 2px;
+}
+
+.search {
+    width: 200px;
+    padding: 9px 12px;
+    border: 1px solid #bbb;
+    border-radius: 20px;
+    outline: none;
+}
+
+.nav-item {
+    text-align: center;
+    color: #555;
+    font-size: 11px;
+    cursor: pointer;
+    min-width: 48px;
+    position: relative;
+}
+
+.nav-item .icon {
+    display: block;
+    font-size: 21px;
+    margin-bottom: 4px;
+}
+
+.nav-item:hover {
+    color: #0a66c2;
+}
+
+.badge {
+    position: absolute;
+    top: -3px;
+    right: 8px;
+    background: #cc1016;
+    color: white;
+    border-radius: 10px;
+    padding: 2px 5px;
+    font-size: 9px;
+}
+
+.divider {
+    height: 38px;
+    border-left: 1px solid #ddd;
+}
+
+@media(max-width: 750px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .search {
+        width: 140px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">in</div>
+
+    <input class="search" type="search" placeholder="⌕  Search">
+
+    <div class="nav-item">
+        <span class="icon">⌂</span>
+        Home
+    </div>
+
+    <div class="nav-item">
+        <span class="icon">♧</span>
+        My Network
+        <span class="badge">5</span>
+    </div>
+
+    <div class="nav-item">
+        <span class="icon">▣</span>
+        Jobs
+    </div>
+
+    <div class="nav-item">
+        <span class="icon">💬</span>
+        Messaging
+    </div>
+
+    <div class="nav-item">
+        <span class="icon">♧</span>
+        Notifications
+        <span class="badge">25</span>
+    </div>
+
+    <div class="nav-item">
+        <span class="icon">👤</span>
+        Me
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="nav-item">
+        <span class="icon">▦</span>
+        For Business
+    </div>
+
+    <div class="nav-item">
+        <span class="icon">🟨</span>
+        Try Premium
+    </div>
+
+</nav>
+
+</body>
+</html>
