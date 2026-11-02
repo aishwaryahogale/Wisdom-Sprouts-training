@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Image Grid</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            padding: 35px;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            max-width: 650px;
+            height: 556px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 115px 222px 191px;
+            gap: 10px;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Top two small images */
+        .top-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* Watermelon image */
+        .watermelon {
+            grid-column: 2;
+            grid-row: 1 / 3;
+        }
+
+        /* Grapefruit image */
+        .grapefruit {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        /* Papaya image */
+        .papaya {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        /* Pineapple image */
+        .pineapple {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .gallery {
+                height: 450px;
+                grid-template-rows: 90px 180px 160px;
+                gap: 7px;
+            }
+
+            .top-images {
+                gap: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gallery">
+
+        <!-- Top left: Grapes and Strawberries -->
+        <div class="top-images">
+            <div class="image">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/766/grapes-main-1506688521.jpg?resize=640:*.jpg" alt="Grapes">
+            </div>
+
+            <div class="image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjtuGdFWFKQS6QrZRgUDNWAQonvMeJkcTszb2b3WEsNg&s.jpg" alt="Strawberries">
+            </div>
+        </div>
+
+        <!-- Right side: Watermelon -->
+        <div class="image watermelon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF9CB8x7_x0NrhXfDEwaZE8YV4SM2ak87ETj9F3VzeQA&s=10.jpg" alt="Watermelon">
+        </div>
+
+        <!-- Middle left: Grapefruit -->
+        <div class="image grapefruit">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL8X5lKnLFoEqGmEQUhbU8wR8ItbPFq06sN81MBpFz3w&s=10.jpg" alt="Grapefruit">
+        </div>
+
+        <!-- Bottom left: Papaya -->
+        <div class="image papaya">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJW8O-59ISV004Catfj9Af4UARC4E3iSfGW1yHnAGNTw&s=10.jpg" alt="Papaya">
+        </div>
+
+        <!-- Bottom right: Pineapple -->
+        <div class="image pineapple">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUvNzF943PyOWe34WGpEgiKyamCsIMGXv_q4SbblpJzw&s=10.jpg" alt="Pineapple">
+        </div>
+
+    </div>
+
+</body>
+</html>
